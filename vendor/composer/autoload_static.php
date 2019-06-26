@@ -20,6 +20,7 @@ class ComposerStaticInit9dfea4407bf7dd19f7a13765d931e05a
         ),
         'P' => 
         array (
+            'Psr\\Log\\' => 8,
             'PhpParser\\' => 10,
         ),
         'F' => 
@@ -28,11 +29,21 @@ class ComposerStaticInit9dfea4407bf7dd19f7a13765d931e05a
         ),
         'E' => 
         array (
+            'EasySwoole\\Whoops\\' => 18,
+            'EasySwoole\\Utility\\' => 19,
+            'EasySwoole\\Template\\' => 20,
+            'EasySwoole\\Spl\\' => 15,
+            'EasySwoole\\Component\\Tests\\' => 27,
+            'EasySwoole\\Component\\' => 21,
             'EasySwoole\\' => 11,
         ),
         'C' => 
         array (
             'Cron\\' => 5,
+        ),
+        'A' => 
+        array (
+            'App\\' => 4,
         ),
     );
 
@@ -49,6 +60,10 @@ class ComposerStaticInit9dfea4407bf7dd19f7a13765d931e05a
         array (
             0 => __DIR__ . '/..' . '/jeremeamia/superclosure/src',
         ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
@@ -57,6 +72,30 @@ class ComposerStaticInit9dfea4407bf7dd19f7a13765d931e05a
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
         ),
+        'EasySwoole\\Whoops\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/easyswoole/easy-whoops/src',
+        ),
+        'EasySwoole\\Utility\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/easyswoole/utility/src',
+        ),
+        'EasySwoole\\Template\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/easyswoole/template/src',
+        ),
+        'EasySwoole\\Spl\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/easyswoole/spl/src',
+        ),
+        'EasySwoole\\Component\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/easyswoole/component/Tests',
+        ),
+        'EasySwoole\\Component\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/easyswoole/component/src',
+        ),
         'EasySwoole\\' => 
         array (
             0 => __DIR__ . '/..' . '/easyswoole/easyswoole/src',
@@ -64,6 +103,10 @@ class ComposerStaticInit9dfea4407bf7dd19f7a13765d931e05a
         'Cron\\' => 
         array (
             0 => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/App',
         ),
     );
 

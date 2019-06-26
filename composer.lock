@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a07966a518a1918658a60b4d8bc08f48",
+    "content-hash": "fb4ed8154271165761364cbd7a2de531",
     "packages": [
         {
             "name": "dragonmantank/cron-expression",
@@ -61,6 +61,105 @@
             "time": "2019-03-31T00:38:28+00:00"
         },
         {
+            "name": "easyswoole/component",
+            "version": "1.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/easy-swoole/component.git",
+                "reference": "eb1232a545f568463640054566ee87b8aaa32867"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/easy-swoole/component/zipball/eb1232a545f568463640054566ee87b8aaa32867",
+                "reference": "eb1232a545f568463640054566ee87b8aaa32867",
+                "shasum": ""
+            },
+            "require": {
+                "easyswoole/spl": "^1.1",
+                "easyswoole/utility": "^1.0",
+                "ext-swoole": "^4.3.0",
+                "jeremeamia/superclosure": "^2.4",
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "easyswoole/phpunit": "^1.0",
+                "easyswoole/swoole-ide-helper": "^1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EasySwoole\\Component\\": "src/",
+                    "EasySwoole\\Component\\Tests\\": "Tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "YF",
+                    "email": "291323003@qq.com"
+                }
+            ],
+            "description": "easyswoole component",
+            "homepage": "https://www.easyswoole.com/",
+            "keywords": [
+                "async",
+                "easyswoole",
+                "framework",
+                "swoole"
+            ],
+            "time": "2019-06-25T11:26:53+00:00"
+        },
+        {
+            "name": "easyswoole/easy-whoops",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/easy-swoole/easyWhoops.git",
+                "reference": "cc51e7b0e63fca2a2a1834540d1afe03df9f1304"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/easy-swoole/easyWhoops/zipball/cc51e7b0e63fca2a2a1834540d1afe03df9f1304",
+                "reference": "cc51e7b0e63fca2a2a1834540d1afe03df9f1304",
+                "shasum": ""
+            },
+            "require": {
+                "easyswoole/component": "^1.7",
+                "easyswoole/spl": "^1.1",
+                "easyswoole/template": "^1.0",
+                "easyswoole/utility": "^1.0",
+                "psr/log": "^1.0.1"
+            },
+            "require-dev": {
+                "easyswoole/easyswoole": "3.x-dev",
+                "easyswoole/swoole-ide-helper": "dev-master"
+            },
+            "suggest": {
+                "symfony/var-dumper": "Pretty print complex values better with var-dumper available"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EasySwoole\\Whoops\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "evalor",
+                    "email": "mipone@foxmail.com"
+                }
+            ],
+            "description": "Whoops provider for easySwoole framework 3.x",
+            "time": "2019-06-02T11:40:31+00:00"
+        },
+        {
             "name": "easyswoole/easyswoole",
             "version": "2.x-dev",
             "source": {
@@ -113,6 +212,168 @@
                 "swoole"
             ],
             "time": "2019-03-06T07:00:24+00:00"
+        },
+        {
+            "name": "easyswoole/spl",
+            "version": "1.1.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/easy-swoole/spl.git",
+                "reference": "e7c6ef27549ee3296e7bebe7889dfaa45f585862"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/easy-swoole/spl/zipball/e7c6ef27549ee3296e7bebe7889dfaa45f585862",
+                "reference": "e7c6ef27549ee3296e7bebe7889dfaa45f585862",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EasySwoole\\Spl\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "YF",
+                    "email": "291323003@qq.com"
+                }
+            ],
+            "description": "php stander lib",
+            "homepage": "https://www.easyswoole.com/",
+            "keywords": [
+                "async",
+                "easyswoole",
+                "framework",
+                "swoole"
+            ],
+            "time": "2019-06-19T17:25:01+00:00"
+        },
+        {
+            "name": "easyswoole/swoole-ide-helper",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/easy-swoole/ide-helper.git",
+                "reference": "767f87773c444aede2e18a683a31107f7bdd6459"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/easy-swoole/ide-helper/zipball/767f87773c444aede2e18a683a31107f7bdd6459",
+                "reference": "767f87773c444aede2e18a683a31107f7bdd6459",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Team Swoole",
+                    "email": "team@swoole.com"
+                }
+            ],
+            "description": "swoole-ide-helper",
+            "time": "2019-05-16T06:47:22+00:00"
+        },
+        {
+            "name": "easyswoole/template",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/easy-swoole/template.git",
+                "reference": "761b6d5c46112b88051a340058b17232ac38b6bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/easy-swoole/template/zipball/761b6d5c46112b88051a340058b17232ac38b6bd",
+                "reference": "761b6d5c46112b88051a340058b17232ac38b6bd",
+                "shasum": ""
+            },
+            "require": {
+                "easyswoole/component": "^1.5",
+                "easyswoole/spl": "^1.0"
+            },
+            "require-dev": {
+                "duncan3dc/blade": "^4.5",
+                "easyswoole/phpunit": "^1.0",
+                "easyswoole/swoole-ide-helper": "^1.1",
+                "league/plates": "3.*",
+                "smarty/smarty": "~3.1",
+                "topthink/think-template": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EasySwoole\\Template\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "YF",
+                    "email": "291323003@qq.com"
+                }
+            ],
+            "description": "An efficient swoole framework",
+            "homepage": "https://www.easyswoole.com/",
+            "keywords": [
+                "async",
+                "easyswoole",
+                "framework",
+                "swoole"
+            ],
+            "time": "2019-06-20T15:29:25+00:00"
+        },
+        {
+            "name": "easyswoole/utility",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/easy-swoole/utility.git",
+                "reference": "8281bcee8f901b33a5bcbec663b029d216f0c86a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/easy-swoole/utility/zipball/8281bcee8f901b33a5bcbec663b029d216f0c86a",
+                "reference": "8281bcee8f901b33a5bcbec663b029d216f0c86a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EasySwoole\\Utility\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "evalor",
+                    "email": "mipone@foxmail.com"
+                }
+            ],
+            "description": "easyswoole extension tool library",
+            "time": "2019-06-01T15:14:12+00:00"
         },
         {
             "name": "jeremeamia/superclosure",
@@ -268,6 +529,53 @@
                 "php"
             ],
             "time": "2018-02-28T20:30:58+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
+                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2018-11-20T15:27:04+00:00"
         },
         {
             "name": "symfony/polyfill-php56",
