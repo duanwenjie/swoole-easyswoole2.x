@@ -9,6 +9,7 @@
 namespace App;
 
 use EasySwoole\Core\Http\AbstractInterface\ExceptionHandlerInterface;
+use EasySwoole\Core\Http\Message\Status;
 use EasySwoole\Core\Http\Request;
 use EasySwoole\Core\Http\Response;
 class ExceptionHandler implements ExceptionHandlerInterface
@@ -23,7 +24,7 @@ class ExceptionHandler implements ExceptionHandlerInterface
         );
         $response->write(json_encode($data,JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES));
         $response->withHeader('Content-type','application/json;charset=utf-8');
-        $response->withStatus(500);
+        $response->withStatus(Status::CODE_INTERNAL_SERVER_ERROR);
         return true;
     }
 

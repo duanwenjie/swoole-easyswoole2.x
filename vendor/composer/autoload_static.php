@@ -12,6 +12,10 @@ class ComposerStaticInit9dfea4407bf7dd19f7a13765d931e05a
     );
 
     public static $prefixLengthsPsr4 = array (
+        't' => 
+        array (
+            'think\\' => 6,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Util\\' => 22,
@@ -48,6 +52,10 @@ class ComposerStaticInit9dfea4407bf7dd19f7a13765d931e05a
     );
 
     public static $prefixDirsPsr4 = array (
+        'think\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/topthink/think-template/src',
+        ),
         'Symfony\\Polyfill\\Util\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-util',
