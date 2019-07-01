@@ -9,6 +9,8 @@ class ComposerStaticInit9dfea4407bf7dd19f7a13765d931e05a
     public static $files = array (
         'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
+        '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
+        '33197a0023ced5fbf8f861d1c4ca048d' => __DIR__ . '/..' . '/topthink/think-orm/src/config.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -24,8 +26,15 @@ class ComposerStaticInit9dfea4407bf7dd19f7a13765d931e05a
         ),
         'P' => 
         array (
+            'Psr\\SimpleCache\\' => 16,
             'Psr\\Log\\' => 8,
+            'Psr\\Container\\' => 14,
+            'Psr\\Cache\\' => 10,
             'PhpParser\\' => 10,
+        ),
+        'O' => 
+        array (
+            'Opis\\Closure\\' => 13,
         ),
         'F' => 
         array (
@@ -55,6 +64,9 @@ class ComposerStaticInit9dfea4407bf7dd19f7a13765d931e05a
         'think\\' => 
         array (
             0 => __DIR__ . '/..' . '/topthink/think-template/src',
+            1 => __DIR__ . '/..' . '/topthink/think-container/src',
+            2 => __DIR__ . '/..' . '/topthink/think-cache/src',
+            3 => __DIR__ . '/..' . '/topthink/think-orm/src',
         ),
         'Symfony\\Polyfill\\Util\\' => 
         array (
@@ -68,13 +80,29 @@ class ComposerStaticInit9dfea4407bf7dd19f7a13765d931e05a
         array (
             0 => __DIR__ . '/..' . '/jeremeamia/superclosure/src',
         ),
+        'Psr\\SimpleCache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
+        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
+        'Psr\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
+        'Psr\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
+        ),
+        'Opis\\Closure\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/opis/closure/src',
         ),
         'FastRoute\\' => 
         array (

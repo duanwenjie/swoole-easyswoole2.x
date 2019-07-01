@@ -6,12 +6,16 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'think\\' => array($vendorDir . '/topthink/think-template/src'),
+    'think\\' => array($vendorDir . '/topthink/think-template/src', $vendorDir . '/topthink/think-container/src', $vendorDir . '/topthink/think-cache/src', $vendorDir . '/topthink/think-orm/src'),
     'Symfony\\Polyfill\\Util\\' => array($vendorDir . '/symfony/polyfill-util'),
     'Symfony\\Polyfill\\Php56\\' => array($vendorDir . '/symfony/polyfill-php56'),
     'SuperClosure\\' => array($vendorDir . '/jeremeamia/superclosure/src'),
+    'Psr\\SimpleCache\\' => array($vendorDir . '/psr/simple-cache/src'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
+    'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
+    'Psr\\Cache\\' => array($vendorDir . '/psr/cache/src'),
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
+    'Opis\\Closure\\' => array($vendorDir . '/opis/closure/src'),
     'FastRoute\\' => array($vendorDir . '/nikic/fast-route/src'),
     'EasySwoole\\Whoops\\' => array($vendorDir . '/easyswoole/easy-whoops/src'),
     'EasySwoole\\Utility\\' => array($vendorDir . '/easyswoole/utility/src'),

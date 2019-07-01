@@ -20,7 +20,6 @@ use App\ExceptionHandler;
 
 Class EasySwooleEvent implements EventInterface {
 
-    private $whoopsInstance;
     public static function frameInitialize(): void
     {
         // TODO: Implement frameInitialize() method.
@@ -54,8 +53,7 @@ Class EasySwooleEvent implements EventInterface {
         $ip = ServerManager::getInstance()->getServer()->connection_info($request->getSwooleRequest()->fd);
 
         //拼接一个简单的日志
-        $logStr = ' | '.$ip['remote_ip'] .' | '. $runTime . '|' . $request->getUri() .' | '.
-            $request->getHeader('user-agent')[0];
+        $logStr = ' | ip：'.$ip['remote_ip'] .' |  耗时：'. $runTime . ' | 链接：' . $request->getUri();
         //判断一下当执行时间大于1秒记录到 slowlog 文件中，否则记录到 access 文件
         if($runTime > 1){
             Logger::getInstance()->log($logStr, 'slowlog');
